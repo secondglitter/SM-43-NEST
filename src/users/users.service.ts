@@ -8,19 +8,23 @@ import { UpdateUsersDto } from './Dto/update-users.dto';
 @Injectable()
 export class UsersService {
 
+
+    // Usuarios
     constructor(@InjectRepository(User) private userRepository: Repository<User>) { }
 
+    //CREAR
     createUser(user: CrearUsersDto) {
 
         const NewUser = this.userRepository.create(user)
         return this.userRepository.save(NewUser)
     }
 
-
+    //OBTENER
     getUsers() {
         return this.userRepository.find()
     }
 
+    //OBTENER SOLO UNO
     getUser(id: number) {
         return this.userRepository.findOne({
             where: {
@@ -29,10 +33,12 @@ export class UsersService {
         })
     }
 
+    //ELIMINAR
     deleteUser(id: number) {
         return this.userRepository.delete({id})
     }
 
+    //EDITAR
     updateUser(id: number, user: UpdateUsersDto){
         return this.userRepository.update({id}, user)
     }

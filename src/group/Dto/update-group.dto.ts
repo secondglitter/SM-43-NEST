@@ -1,4 +1,4 @@
-export class UpdateUsersDto{
+export class UpdateGroupDto{
 
     UserName?: string;
     Email?: string;

@@ -1,4 +1,4 @@
-export class CrearUsersDto{
+export class CrearGroupDto{
 
     UserName: string;
     Email: string;
