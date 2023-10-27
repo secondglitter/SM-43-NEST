@@ -5,7 +5,7 @@ import { Group } from './group.entity';
 import { UpdateGroupDto } from './Dto/update-group.dto';
 
 
-@Controller('group')
+@Controller('groups')
 export class GroupController {
 
     constructor(private usersService : GroupService){}

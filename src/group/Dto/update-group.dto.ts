@@ -1,7 +1,8 @@
 export class UpdateGroupDto{
 
-    UserName?: string;
-    Email?: string;
-    Password?: string;
+    NameGroup?: string;
+    Members?: number;
+    Class?: string;
+    Image?: string;
     
 }

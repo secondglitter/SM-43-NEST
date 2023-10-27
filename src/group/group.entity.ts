@@ -6,12 +6,15 @@ export class Group {
   id: number;
   
   @Column()
-  UserName: string;
+  NameGroup: string;
   
   @Column()
-  Password: string;
+  Members: number;
 
   @Column()
-  Email: string;
+  Class: string;
+
+  @Column()
+  Image: string;
 
 }
