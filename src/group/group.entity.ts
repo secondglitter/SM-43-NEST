@@ -1,5 +1,6 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
+
 @Entity()
 export class Group {
   @PrimaryGeneratedColumn()
@@ -8,7 +9,7 @@ export class Group {
   @Column()
   NameGroup: string;
 
-  @Column()
+  @Column({type:'varchar', length: 500})
   Description: string;
 
   @Column()
