@@ -1,9 +1,6 @@
-import { MinLength } from "class-validator";
-
 export class UpdateGroupDto{
 
     NameGroup?: string;
-    @MinLength(500)
     Description?: string;
     Members?: number;
     Class?: string;

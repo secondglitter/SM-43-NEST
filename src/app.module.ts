@@ -1,9 +1,10 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './users/users.module';
+import { GroupModule } from './group/group.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { GroupModule } from './group/group.module';
+import { CategoriasModule } from './categorias/categorias.module';
 
 @Module({
   imports: [
@@ -18,7 +19,8 @@ import { GroupModule } from './group/group.module';
       synchronize: true,
     }),
   UsersModule,
-  GroupModule],
+  GroupModule,
+  CategoriasModule],
   controllers: [AppController],
   providers: [AppService],
 })

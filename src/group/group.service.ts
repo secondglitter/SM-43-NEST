@@ -4,7 +4,6 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { CrearGroupDto } from './Dto/create-group.dto';
 import { UpdateGroupDto } from './Dto/update-group.dto';
-import { group } from 'console';
 
 @Injectable()
 export class GroupService {
