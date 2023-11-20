@@ -5,6 +5,7 @@ import { GroupModule } from './group/group.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { CategoriasModule } from './categorias/categorias.module';
+import { TriviaModule } from './trivia/trivia.module';
 
 @Module({
   imports: [
@@ -20,7 +21,8 @@ import { CategoriasModule } from './categorias/categorias.module';
     }),
   UsersModule,
   GroupModule,
-  CategoriasModule],
+  CategoriasModule,
+  TriviaModule],
   controllers: [AppController],
   providers: [AppService],
 })

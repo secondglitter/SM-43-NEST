@@ -5,7 +5,6 @@ import { Categoria } from './categorias.entity';
 import { CrearCategoriaDto } from './Dto/create-categorias.dto';
 
 
-
 @Controller('categorias')
 export class CategoriasController {
 
